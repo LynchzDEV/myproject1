@@ -1,17 +1,20 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
- */
-
 package int103.myproject1;
 
-/**
- *
- * @author lynchz
- */
 public class MyProject1 {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        pyramid(50);
+    }
+
+    public static void pyramid(int rows) {
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < rows - i; j++) {
+                System.out.print(" ");
+            }
+            for (int k = 0; k < i; k++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
     }
 }
